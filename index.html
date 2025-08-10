@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Games - Premium Gaming Experience</title>
+    <meta name="description" content="Experience the future of gaming with Alpha Games. Premium dark-themed gaming platform with cutting-edge graphics and immersive gameplay.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Alpha Games - Premium Gaming Experience">
+    <meta property="og:description" content="Experience the future of gaming with Alpha Games. Premium dark-themed gaming platform with cutting-edge graphics and immersive gameplay.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alphagames.com">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Audiowide&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-trail"></div>
+    
+    <!-- Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand glitch-text" href="#" data-text="ALPHA GAMES">ALPHA GAMES</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link hover-glow" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-glow" href="#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-glow" href="#leaderboard">Leaderboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-glow" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title glitch-text" data-text="ALPHA GAMES">ALPHA GAMES</h1>
+                        <p class="hero-subtitle scatter-text">Experience the Future of Gaming</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" id="live-players">0</span>
+                                <span class="stat-label">Players Online</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1,337</span>
+                                <span class="stat-label">Active Tournaments</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary neon-btn">
+                            <span>ENTER GAME</span>
+                            <i class="fas fa-gamepad"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-images">
+                        <div class="floating-image" data-speed="2">
+                            <img src="https://pixabay.com/get/gf2c50660a85596e6eeba22a75abaff53c019c63f0c5dd2018161d3c85e3d2d715187220af4d58a97f187fd5f649037548a7a5a5e6157fc5dd01edd9a1c2160c2_1280.jpg" alt="Gaming Character" class="img-fluid">
+                        </div>
+                        <div class="floating-image" data-speed="3">
+                            <img src="https://pixabay.com/get/gbe89f1a1eacd5694aa128ebf0ecdd04aecd20aab34efa76f19d3e2030cb411481701fb2787be0e2b13c816bdf821711b06ce11607ba9857ec3f63cbf3af70c2d_1280.jpg" alt="Gaming Action" class="img-fluid">
+                        </div>
+                        <div class="floating-image" data-speed="1.5">
+                            <img src="https://pixabay.com/get/g3c42bbd0b5549ba97041ea1bf207167a98fa80eb695e245698abb37b16751db1581420853bc55a7d3e40f1cab1ad4f9452baa91f5449c1fa8aba34f644bc5646_1280.png" alt="Gaming Character" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Games Section -->
+    <section id="games" class="games-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5 glitch-text" data-text="FEATURED GAMES">FEATURED GAMES</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="game-card">
+                        <div class="card-image">
+                            <img src="https://pixabay.com/get/gabce73619a6728ac0a4b5fc4ebbf0a413eda17d6d6f7c7f14419fc1506fd833d22a995498a61fbe9045e5eae27b45a33d4a701efbb7377df0a1a42b791912ae4_1280.jpg" alt="Cyber Warriors" class="img-fluid">
+                            <div class="card-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title glitch-hover">CYBER WARRIORS</h3>
+                            <p class="card-description">Epic battles in a cyberpunk world</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-users"></i> 2.5M Players</span>
+                                <span><i class="fas fa-star"></i> 4.9/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="game-card">
+                        <div class="card-image">
+                            <img src="https://pixabay.com/get/g55219086dc5a5d0071cba539e7a3076f48cc7c6a242064843dd5d9cae450280f247533e18039851caf5126e66f923f485c46ae921f5bf3926c1cde826bdcbd5b_1280.jpg" alt="Neon Racing" class="img-fluid">
+                            <div class="card-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title glitch-hover">NEON RACING</h3>
+                            <p class="card-description">High-speed futuristic racing</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-users"></i> 1.8M Players</span>
+                                <span><i class="fas fa-star"></i> 4.7/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="game-card">
+                        <div class="card-image">
+                            <img src="https://pixabay.com/get/gbcfbaeb68734d61df6763548713ca3b83ad3c963afcc30944b87d8b5b8e7ca4772ef91f996b7e62b07b4c3192c5b08b22fdc3da2d1ad8baad61e7df6b068aebe_1280.jpg" alt="Space Odyssey" class="img-fluid">
+                            <div class="card-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title glitch-hover">SPACE ODYSSEY</h3>
+                            <p class="card-description">Explore the vast universe</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-users"></i> 3.2M Players</span>
+                                <span><i class="fas fa-star"></i> 4.8/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="game-card">
+                        <div class="card-image">
+                            <img src="https://pixabay.com/get/g180c6d37894b689b6454fb1bdd20845f0ffef0ae5e85df3adaec461cbe5944c38efe25bb47f632699641f20bd8c5281825401cd9b77971ee6d61b2590c70aa7b_1280.jpg" alt="Mech Combat" class="img-fluid">
+                            <div class="card-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title glitch-hover">MECH COMBAT</h3>
+                            <p class="card-description">Giant robot battles</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-users"></i> 1.5M Players</span>
+                                <span><i class="fas fa-star"></i> 4.6/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="game-card">
+                        <div class="card-image">
+                            <img src="https://pixabay.com/get/g2300cda256e9e9055b05e74aecb7c465c8f5c5ba616218eec00948ec92e67530d46fba40ccae362fb65d7946eff6ff26e3016777a1e3558e09b648bb0323f147_1280.jpg" alt="Digital Legends" class="img-fluid">
+                            <div class="card-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title glitch-hover">DIGITAL LEGENDS</h3>
+                            <p class="card-description">Become a digital legend</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-users"></i> 2.1M Players</span>
+                                <span><i class="fas fa-star"></i> 4.7/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="game-card">
+                        <div class="card-image">
+                            <img src="https://pixabay.com/get/gfef62295894425258b46987461a4ffc1531bbec14d85d86368a7a0f8b172839305f17f12f2723c99a971694b2adf8f28af066cad1795eab55baa48d919716099_1280.jpg" alt="Gaming Setup" class="img-fluid">
+                            <div class="card-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title glitch-hover">ALPHA ARENA</h3>
+                            <p class="card-description">Ultimate gaming arena</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-users"></i> 4.1M Players</span>
+                                <span><i class="fas fa-star"></i> 4.9/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="section-title mb-4 glitch-text" data-text="GLOBAL LEADERBOARD">GLOBAL LEADERBOARD</h2>
+                    <div class="leaderboard-container">
+                        <div class="leaderboard-header">
+                            <span>RANK</span>
+                            <span>PLAYER</span>
+                            <span>SCORE</span>
+                            <span>LEVEL</span>
+                        </div>
+                        <div class="leaderboard-scroll" id="leaderboard-scroll">
+                            <!-- Leaderboard items will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="tournament-section">
+                        <h3 class="section-title mb-4">LIVE TOURNAMENTS</h3>
+                        <div class="tournament-card">
+                            <img src="https://pixabay.com/get/gc47d46d20b30d775c184c51e84202fda738a67dd4f5c05a16f88483b077e446134ad90119049f389a4ddf8fa6e140f7c40a369fb898b5f26614aed2413744b99_1280.jpg" alt="Tournament" class="img-fluid mb-3">
+                            <h4>CYBER CHAMPIONSHIP</h4>
+                            <p>Prize Pool: $50,000</p>
+                            <div class="tournament-stats">
+                                <span><i class="fas fa-users"></i> 1,024 Players</span>
+                                <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            </div>
+                            <button class="btn btn-primary neon-btn w-100 mt-3">
+                                <span>JOIN NOW</span>
+                            </button>
+                        </div>
+                        
+                        <div class="tournament-card mt-4">
+                            <img src="https://pixabay.com/get/gee61a017ca1ab808f7523767003ea06f0655381e8aea3ed81ae7760bac72450cfe92e40c33986d083d70d357fd2f15877b8cdaec7138888d84e1d59cd385629a_1280.jpg" alt="Tournament" class="img-fluid mb-3">
+                            <h4>NEON MASTERS</h4>
+                            <p>Prize Pool: $25,000</p>
+                            <div class="tournament-stats">
+                                <span><i class="fas fa-users"></i> 512 Players</span>
+                                <span><i class="fas fa-clock"></i> 1h 45m</span>
+                            </div>
+                            <button class="btn btn-primary neon-btn w-100 mt-3">
+                                <span>JOIN NOW</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact" class="footer-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3 class="footer-title glitch-text" data-text="ALPHA GAMES">ALPHA GAMES</h3>
+                    <p>The ultimate gaming experience awaits. Join millions of players in the most advanced gaming platform ever created.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link pulse-glow"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link pulse-glow"><i class="fab fa-twitch"></i></a>
+                        <a href="#" class="social-link pulse-glow"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link pulse-glow"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h4>Games</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="hover-glow">Cyber Warriors</a></li>
+                        <li><a href="#" class="hover-glow">Neon Racing</a></li>
+                        <li><a href="#" class="hover-glow">Space Odyssey</a></li>
+                        <li><a href="#" class="hover-glow">Mech Combat</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="hover-glow">Discord</a></li>
+                        <li><a href="#" class="hover-glow">Forums</a></li>
+                        <li><a href="#" class="hover-glow">Tournaments</a></li>
+                        <li><a href="#" class="hover-glow">Leaderboard</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="hover-glow">Help Center</a></li>
+                        <li><a href="#" class="hover-glow">Contact Us</a></li>
+                        <li><a href="#" class="hover-glow">Bug Reports</a></li>
+                        <li><a href="#" class="hover-glow">Status</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="hover-glow">Privacy Policy</a></li>
+                        <li><a href="#" class="hover-glow">Terms of Service</a></li>
+                        <li><a href="#" class="hover-glow">DMCA</a></li>
+                        <li><a href="#" class="hover-glow">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="neon-divider my-4">
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Alpha Games. All rights reserved. Powered by cutting-edge technology.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/particles.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
